@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="255.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddLectureGUIController">
+   <children>
+      <Button id="add_button" fx:id="addAndUpdateButton" layoutX="690.0" layoutY="211.0" mnemonicParsing="false" onMouseClicked="#onMouseClickedAddAndUpdate" prefHeight="31.0" prefWidth="102.0" text="講義追加・更新" />
+      <Label layoutX="34.0" layoutY="14.0" prefHeight="47.0" prefWidth="126.0" text="講義設定">
+         <font>
+            <Font name="Arial" size="30.0" />
+         </font>
+      </Label>
+      <TextField id="add_lecture" fx:id="lectureName" layoutX="15.0" layoutY="142.0" prefHeight="39.0" prefWidth="199.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField id="add_URL" fx:id="lectureURL" layoutX="458.0" layoutY="142.0" prefHeight="39.0" prefWidth="334.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField id="add_room" fx:id="lectureRoom" layoutX="259.0" layoutY="142.0" prefHeight="39.0" prefWidth="152.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="76.0" layoutY="92.0" text="講義名">
+         <font>
+            <Font name="Arial" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="309.0" layoutY="92.0" text="教室">
+         <font>
+            <Font name="Arial" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="567.0" layoutY="92.0" text="ルームURL">
+         <font>
+            <Font name="Arial" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="DoWPeriod" layoutX="625.0" layoutY="16.0" prefHeight="45.0" prefWidth="182.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Separator layoutY="73.0" prefHeight="0.0" prefWidth="810.0" />
+      <Button fx:id="lectureDelete" layoutX="14.0" layoutY="214.0" mnemonicParsing="false" onMouseClicked="#onMouseClickedLectureDelete" text="講義情報の削除" />
+   </children>
+</Pane>
